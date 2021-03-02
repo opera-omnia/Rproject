@@ -1,0 +1,57 @@
+# R is powerful satistical programing langauge. 
+# Class notes - Johns Hopkins - R-programming - Prof. R.Peng
+
+# everything in R is an object. 5 basic classes of object. 
+# math on Numeric(real number) on interger Objects
+2 + 2
+3*4
+sqrt(8)
+2.343 + 2.123
+
+# logical objects
+2 == 2
+3 == 4
+5 > 9
+
+# character objects
+"apple"
+"apple" == "apples"
+"ball" > "apple"
+
+#VECTOR
+#basic object in R is a vector - collection of objects of same class. exception is list. 
+
+I_am_Vector <- c(1,2,3)
+
+# c - concatanate - combine
+# <- is an assignment operator.
+
+#NUMBERS
+#in R are treated as numeric objects - i.e. double precision real numbers. 
+# if you enter 1 this is numeric, 1L gives you integer
+
+
+I_am_Numeric <- 1
+# class() to find out class of R object
+class(I_am_Numeric)
+
+ I_am_Integer <- 1L
+class(I_am_Integer)
+
+#ATTRIBUTES
+# object in R can have attributes
+# names, dimnames, class, length, dimension
+# access using attributes()
+
+
+
+
+
+
+
+
+
+
+
+
+
