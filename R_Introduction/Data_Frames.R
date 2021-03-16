@@ -21,6 +21,27 @@ nrow(i_am_dataframe)
 #number of colms
 ncol(i_am_dataframe)
 
+#df from different variables
+name1 <- c(12,13,14,15,16)
+name2 <- c(1,2,3,4,5)
+name1_2 <- data.frame(name1,name2)
+name1_2
+summary(name1_2)
+
+#given names to cols
+name1_2_col_names <-data.frame("serial" = name1, "kg" = name2)
+name1_2_col_names
+summary(name1_2_col_names$serial)
+
+#add new cols to existing df
+name1_2_col_names$lb <- c(34,56,76,45,36)
+#lb should be of same length
+name1_2_col_names
+
+dim(name1_2_col_names)
+str(name1_2_col_names)
+
+
 #MATRIX CONVERSION
 #matrix can be created from df by calling data.matrix(). Remember, all data in matrix has to be of same datatype, so if you tranform the data to matrix, and all data in the df is not of same type, the fx will coerece the data to be of same type. BE AWARE!!
 
